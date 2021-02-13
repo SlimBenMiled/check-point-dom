@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+
+<body>
+    <table class="aliment" border="1">
+        <tr>
+            <th>article</th>
+            <th>quantité</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>lait</td>
+            <td>
+                
+                    <button class="plus" onclick="increase('inp1','price1',12)" >+</button>
+                    <input id="inp1"  type="text" value="0">
+                    <button class="moins" onclick="decrease('inp1','price1',12)">-</button>
+                
+            </td>
+            <td id="price1">12</td>
+        </tr>
+        <tr>
+            <td>café</td>
+            <td>
+                
+                    <button class="plus" onclick="increase('inp2','price2',20)">+</button>
+                    <input id="inp2" type="text" value="0">
+                    <button class="moins" onclick="decrease('inp2','price2',20)">-</button>
+                
+            </td>
+            <td id=price2>20</td>
+        </tr>
+<tr>
+    <td>total</td>
+    <td></td>
+    <td >
+        
+        <input id="total" type="text" value="0">
+    </td>
+</tr>
+    </table>
+<script src="dom.js"></script>
+</body>
+
+</html>
